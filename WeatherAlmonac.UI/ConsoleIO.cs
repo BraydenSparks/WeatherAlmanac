@@ -91,10 +91,20 @@ namespace WeatherAlmanac.UI
         public string GetString(string message)
         {
             string result = "";
-            while (string.IsNullOrEmpty(result))
+            bool valid = false;
+            while (!valid)
             {
                 Console.Write(message);
                 result = Console.ReadLine();
+                if (string.IsNullOrEmpty(result))
+                {
+                    Error("Invalid string! input was null or empty.\n\n");
+                }
+                else
+                {
+                    valid = true;
+                }
+                
             }
             return result;
         }
@@ -102,10 +112,19 @@ namespace WeatherAlmanac.UI
         public string GetYesNo(string message)
         {
             string result = "";
-            while (result != "y" && result != "n")
+            bool valid = false;
+            while (!valid)
             {
                 Console.Write(message);
                 result = Console.ReadLine().Trim().ToLower();
+                if(result != "y" && result != "n")
+                {
+                    Error("Invalid response! use Y or N\n\n");
+                }
+                else
+                {
+                    valid = true;
+                }
             }
             return result;
         }

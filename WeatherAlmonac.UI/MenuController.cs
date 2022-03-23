@@ -36,7 +36,7 @@ namespace WeatherAlmanac.UI
             }
             else
             {
-                _ui.Display("Invalid mode: Exiting... ");
+                _ui.Error("Invalid mode: Exiting... ");
                 Environment.Exit(0);
                 return ApplicationMode.TEST;
             }
@@ -134,9 +134,11 @@ namespace WeatherAlmanac.UI
             // display either successful Get() or display not found message
             if (result.Success)
             {
+                _ui.Display("");
                 foreach (DateRecord record in result.Data)
                 {
-                    _ui.Display("\n" + record.ToString());
+                    _ui.Display($"{record.ToString()}\n" +
+                        $"--------------");
                 }
             }
             else
