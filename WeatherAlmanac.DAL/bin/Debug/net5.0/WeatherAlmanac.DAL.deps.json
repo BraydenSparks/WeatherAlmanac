@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WeatherAlmanac.DAL/1.0.0": {
+        "dependencies": {
+          "WeatherAlmanac.Core": "1.0.0"
+        },
+        "runtime": {
+          "WeatherAlmanac.DAL.dll": {}
+        }
+      },
+      "WeatherAlmanac.Core/1.0.0": {
+        "runtime": {
+          "WeatherAlmanac.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WeatherAlmanac.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WeatherAlmanac.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

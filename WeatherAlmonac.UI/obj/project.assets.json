@@ -1,0 +1,138 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "WeatherAlmanac.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "WeatherAlmanac.Core": "1.0.0",
+          "WeatherAlmanac.DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WeatherAlmanac.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WeatherAlmanac.BLL.dll": {}
+        }
+      },
+      "WeatherAlmanac.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/WeatherAlmanac.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WeatherAlmanac.Core.dll": {}
+        }
+      },
+      "WeatherAlmanac.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "WeatherAlmanac.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WeatherAlmanac.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WeatherAlmanac.DAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WeatherAlmanac.BLL/1.0.0": {
+      "type": "project",
+      "path": "../WeatherAlmanac.BLL/WeatherAlmanac.BLL.csproj",
+      "msbuildProject": "../WeatherAlmanac.BLL/WeatherAlmanac.BLL.csproj"
+    },
+    "WeatherAlmanac.Core/1.0.0": {
+      "type": "project",
+      "path": "../WeatherAlmonac.Core/WeatherAlmanac.Core.csproj",
+      "msbuildProject": "../WeatherAlmonac.Core/WeatherAlmanac.Core.csproj"
+    },
+    "WeatherAlmanac.DAL/1.0.0": {
+      "type": "project",
+      "path": "../WeatherAlmanac.DAL/WeatherAlmanac.DAL.csproj",
+      "msbuildProject": "../WeatherAlmanac.DAL/WeatherAlmanac.DAL.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "WeatherAlmanac.BLL >= 1.0.0",
+      "WeatherAlmanac.Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Brayden\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Brayden\\Dev10 Trainning\\Mod-3\\WeatherAlmonac\\WeatherAlmonac.UI\\WeatherAlmanac.UI.csproj",
+      "projectName": "WeatherAlmanac.UI",
+      "projectPath": "D:\\Brayden\\Dev10 Trainning\\Mod-3\\WeatherAlmonac\\WeatherAlmonac.UI\\WeatherAlmanac.UI.csproj",
+      "packagesPath": "C:\\Users\\Brayden\\.nuget\\packages\\",
+      "outputPath": "D:\\Brayden\\Dev10 Trainning\\Mod-3\\WeatherAlmonac\\WeatherAlmonac.UI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Brayden\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "D:\\Brayden\\Dev10 Trainning\\Mod-3\\WeatherAlmonac\\WeatherAlmanac.BLL\\WeatherAlmanac.BLL.csproj": {
+              "projectPath": "D:\\Brayden\\Dev10 Trainning\\Mod-3\\WeatherAlmonac\\WeatherAlmanac.BLL\\WeatherAlmanac.BLL.csproj"
+            },
+            "D:\\Brayden\\Dev10 Trainning\\Mod-3\\WeatherAlmonac\\WeatherAlmonac.Core\\WeatherAlmanac.Core.csproj": {
+              "projectPath": "D:\\Brayden\\Dev10 Trainning\\Mod-3\\WeatherAlmonac\\WeatherAlmonac.Core\\WeatherAlmanac.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
