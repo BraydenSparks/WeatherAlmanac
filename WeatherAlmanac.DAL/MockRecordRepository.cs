@@ -16,7 +16,7 @@ namespace WeatherAlmanac.DAL
         {
             _records = new List<DateRecord>();
             DateRecord bogus = new DateRecord();
-            bogus.Date = new DateTime();
+            bogus.Date = DateTime.Today;
             bogus.HighTemp = 82;
             bogus.LowTemp = 40;
             bogus.Humidity = .30m;
@@ -26,12 +26,31 @@ namespace WeatherAlmanac.DAL
 
         public Result<DateRecord> Add(DateRecord record)
         {
-            throw new NotImplementedException();
+            // add record to list
+            _records.Add(record);
+
+            // return succeful result
+            Result<DateRecord> result = new Result<DateRecord>();
+                result.Data = record;
+                result.Message = "";
+                result.Success = true;
+            return result;
         }
 
         public Result<DateRecord> Edit(DateRecord record)
         {
-            throw new NotImplementedException();
+            Result<DateRecord> result = new Result<DateRecord>();
+            for (int i = 0; i < _records.Count; i++)
+            {
+                if (record.Date == _records[i].Date)
+                {
+                    _records[i] = record;
+                    result.Data = record;
+                }
+            }
+            result.Message = "";
+            result.Success = true;
+            return result;
         }
 
         public Result<List<DateRecord>> GetAll()
@@ -45,7 +64,19 @@ namespace WeatherAlmanac.DAL
 
         public Result<DateRecord> Remove(DateTime date)
         {
-            throw new NotImplementedException();
+            Result<DateRecord> result = new Result<DateRecord>();
+            int idx = 0;
+            for (int i = 0; i < _records.Count; i++)
+            {
+                if (date == _records[i].Date)
+                {
+                    idx = i;
+                }
+            }
+            _records.RemoveAt(idx);
+            result.Message = "";
+            result.Success = true;
+            return result;
         }
     }
 }

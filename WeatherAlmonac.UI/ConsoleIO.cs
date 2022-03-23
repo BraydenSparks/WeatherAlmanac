@@ -8,13 +8,13 @@ namespace WeatherAlmanac.UI
 {
     public class ConsoleIO
     {
-        public int GetInt(string prompt)
+        public int GetInt(string message)
         {
             int result = -1;
             bool valid = false;
             while (!valid)
             {
-                Console.Write($"{prompt}: ");
+                Console.Write($"{message}");
                 if (!int.TryParse(Console.ReadLine(), out result))
                 {
                     Error("Please input a proper integer\n\n");
@@ -36,11 +36,78 @@ namespace WeatherAlmanac.UI
             Display(message);
             Console.ForegroundColor = ConsoleColor.White;
         }
+        public void Success(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Display(message);
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+
         public void Warn(string message)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Display(message);
             Console.ForegroundColor = ConsoleColor.White;
+        }
+
+        public DateTime GetDateTime(string message)
+        {
+            DateTime result = new DateTime();
+            bool valid = false;
+            while (!valid)
+            {
+                Console.Write($"{message}");
+                if (!DateTime.TryParse(Console.ReadLine(), out result))
+                {
+                    Error("Please input a valid DateTime\n\n");
+                }
+                else
+                {
+                    valid = true;
+                }
+            }
+            return result;
+        }
+
+        public decimal GetDecimal(string message)
+        {
+            decimal result = -1m;
+            bool valid = false;
+            while (!valid)
+            {
+                Console.Write($"{message}");
+                if (!Decimal.TryParse(Console.ReadLine(), out result))
+                {
+                    Error("Please input a valid decimal\n\n");
+                }
+                else
+                {
+                    valid = true;
+                }
+            }
+            return result;
+        }
+
+        public string GetString(string message)
+        {
+            string result = "";
+            while (string.IsNullOrEmpty(result))
+            {
+                Console.Write(message);
+                result = Console.ReadLine();
+            }
+            return result;
+        }
+
+        public string GetYesNo(string message)
+        {
+            string result = "";
+            while (result != "y" && result != "n")
+            {
+                Console.Write(message);
+                result = Console.ReadLine().Trim().ToLower();
+            }
+            return result;
         }
     }
 }
