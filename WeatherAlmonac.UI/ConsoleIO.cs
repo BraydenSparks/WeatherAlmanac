@@ -43,5 +43,4 @@ namespace WeatherAlmanac.UI
             Console.ForegroundColor = ConsoleColor.White;
         }
     }
-
 }

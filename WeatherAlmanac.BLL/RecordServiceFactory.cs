@@ -13,13 +13,13 @@ namespace WeatherAlmanac.BLL
     {
         public static IRecordService GetRecordService(ApplicationMode mode)
         {
-            if (mode == ApplicationMode.LIVE)
+            if (mode == ApplicationMode.TEST)
             {
-                return new RecordService(new FileRecordRepository());
+                return new RecordService(new MockRecordRepository());
             }
             else
             {
-                return new RecordService(new MockRecordRepository());
+                throw new NotImplementedException();
             }
         }
     }

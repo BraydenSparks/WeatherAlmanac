@@ -12,9 +12,9 @@ namespace WeatherAlmanac.BLL
     {
         private IRecordRepository _repo;
 
-        public RecordService(IRecordRepository implementation)
+        public RecordService(IRecordRepository repo)
         {
-            _repo = implementation;
+            _repo = repo;
         }
 
         public Result<List<DateRecord>> LoadRange(DateTime start, DateTime end)
