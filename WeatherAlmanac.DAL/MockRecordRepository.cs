@@ -73,9 +73,11 @@ namespace WeatherAlmanac.DAL
                     idx = i;
                 }
             }
-            _records.RemoveAt(idx);
+            
+            result.Data = _records[idx];
             result.Message = "";
             result.Success = true;
+            _records.RemoveAt(idx);
             return result;
         }
     }
