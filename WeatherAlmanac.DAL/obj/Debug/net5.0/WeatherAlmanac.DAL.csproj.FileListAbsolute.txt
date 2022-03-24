@@ -13,3 +13,4 @@ D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmanac.DAL\obj\Debug\net
 D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmanac.DAL\bin\Debug\net5.0\WeatherAlmanac.Core.dll
 D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmanac.DAL\bin\Debug\net5.0\WeatherAlmanac.Core.pdb
 D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmanac.DAL\obj\Debug\net5.0\WeatherAlmanac.DAL.csproj.CopyComplete
+D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmanac.DAL\bin\Debug\net5.0\Data\DateRecords.csv

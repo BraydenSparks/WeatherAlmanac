@@ -15,3 +15,4 @@ D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmanac.BLL\bin\Debug\net
 D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmanac.BLL\bin\Debug\net5.0\WeatherAlmanac.DAL.pdb
 D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmanac.BLL\bin\Debug\net5.0\WeatherAlmanac.Core.pdb
 D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmanac.BLL\obj\Debug\net5.0\WeatherAlmanac.BLL.csproj.CopyComplete
+D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmanac.BLL\bin\Debug\net5.0\Data\DateRecords.csv

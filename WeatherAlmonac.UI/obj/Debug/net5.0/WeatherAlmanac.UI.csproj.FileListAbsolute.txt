@@ -21,3 +21,4 @@ D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmonac.UI\obj\Debug\net5
 D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmonac.UI\obj\Debug\net5.0\ref\WeatherAlmanac.UI.dll
 D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmonac.UI\obj\Debug\net5.0\WeatherAlmanac.UI.pdb
 D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmonac.UI\obj\Debug\net5.0\WeatherAlmanac.UI.genruntimeconfig.cache
+D:\Brayden\Dev10 Trainning\Mod-3\WeatherAlmonac\WeatherAlmonac.UI\bin\Debug\net5.0\Data\DateRecords.csv

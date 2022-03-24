@@ -19,7 +19,7 @@ namespace WeatherAlmanac.BLL
             }
             else
             {
-                throw new NotImplementedException();
+                return new RecordService(new FileRecordRepository());
             }
         }
     }

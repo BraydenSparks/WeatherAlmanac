@@ -103,8 +103,7 @@ namespace WeatherAlmanac.UI
                 else
                 {
                     valid = true;
-                }
-                
+                } 
             }
             return result;
         }

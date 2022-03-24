@@ -16,7 +16,6 @@ namespace WeatherAlmonac.UI
             IRecordService service = RecordServiceFactory.GetRecordService(mode);
             menu.Service = service;
             menu.Run();
-
         }
     }
 }
